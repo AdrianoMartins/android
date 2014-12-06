@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="aosp"
-           fetch=".." />
+  <remote name="aosp" fetch="https://android.googlesource.com" />
+  <remote name="github" fetch="https://github.com/" />
+
   <default revision="refs/tags/android-5.0.1_r1"
            remote="aosp"
            sync-j="4" />
@@ -505,5 +506,23 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
+
+  <!-- AOSP for LG G Pad (v500) -->
+  
+  
+  <!-- <project path="kernel/lge/v500" name="AdrianoMartins/v500_kernel_aosp" remote="github" revision="android-5.0" /> -->
+
+  <remove-project name="platform/build" />
+  <remove-project name="platform/system/core"/>
+  <remove-project name="platform/hardware/qcom/display"/>
+
+  <project path="system/core" name="AdrianoMartins/platform_system_core" remote="github" revision="android-5.0" />
+  <project path="hardware/qcom/display" name="AdrianoMartins/platform_hardware_qcom_display" remote="github" revision="android-5.0" />
+  <project path="device/lge/v500" name="AdrianoMartins/device_lge_v500" remote="github" revision="android-5.0" />
+  <project path="vendor/lge" name="AdrianoMartins/vendor_lge" remote="github" revision="android-5.0" />
+
+  <project path="build" name="AdrianoMartins/platform_build" remote="github" >
+      <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
 
 </manifest>
