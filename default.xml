@@ -519,8 +519,6 @@
 
   <project path="system/core" name="AdrianoMartins/platform_system_core" remote="github" revision="android-5.0" />
   <project path="hardware/qcom/display" name="AdrianoMartins/platform_hardware_qcom_display" remote="github" revision="android-5.0" />
-  <project path="device/lge/v500" name="AdrianoMartins/device_lge_v500" remote="github" revision="android-5.0.1" />
-  <project path="vendor/lge" name="AdrianoMartins/vendor_lge" remote="github" revision="android-5.0.1" />
 
   <project path="build" name="AdrianoMartins/platform_build" remote="github" revision="android-5.0" >
       <copyfile src="core/root.mk" dest="Makefile" />
