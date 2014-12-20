@@ -4,7 +4,7 @@
   <remote name="aosp" fetch="https://android.googlesource.com" />
   <remote name="github" fetch="https://github.com/" />
 
-  <default revision="refs/tags/android-5.0.1_r1"
+  <default revision="refs/tags/android-5.0.2_r1"
            remote="aosp"
            sync-j="4" />
 
@@ -517,10 +517,10 @@
   <remove-project name="platform/hardware/qcom/display"/>
   <remove-project name="platform/external/sepolicy"/>
 
-  <project path="system/core" name="AdrianoMartins/platform_system_core" remote="github" revision="android-5.0" />
-  <project path="hardware/qcom/display" name="AdrianoMartins/platform_hardware_qcom_display" remote="github" revision="android-5.0" />
+  <project path="system/core" name="AdrianoMartins/platform_system_core" remote="github" revision="android-5.0.2" />
+  <project path="hardware/qcom/display" name="AdrianoMartins/platform_hardware_qcom_display" remote="github" revision="android-5.0.2" />
 
-  <project path="build" name="AdrianoMartins/platform_build" remote="github" revision="android-5.0" >
+  <project path="build" name="AdrianoMartins/platform_build" remote="github" revision="android-5.0.2" >
       <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   
