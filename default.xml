@@ -517,18 +517,18 @@
   <remove-project name="platform/hardware/qcom/display"/>
   <remove-project name="platform/bionic"/>
   <remove-project name="platform/frameworks/base"/>
+  <remove-project name="platform/external/wpa_supplicant_8"/>
   
-  <project path="system/core" name="AdrianoMartins/platform_system_core" remote="github" revision="android-5.0.2" />
-  <project path="hardware/qcom/display" name="AdrianoMartins/platform_hardware_qcom_display" remote="github" revision="android-5.0.2" />
-  <project path="bionic" name="AdrianoMartins/android_bionic" remote="github" revision="android-5.0.2" />
-  <project path="external/busybox" name="AdrianoMartins/android_external_busybox" remote="github" revision="android-5.0.2" />
-
   <project path="build" name="AdrianoMartins/platform_build" remote="github" revision="android-5.0.2" >
       <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
+  <project path="system/core" name="AdrianoMartins/platform_system_core" remote="github" revision="android-5.0.2" />
+  <project path="hardware/qcom/display" name="AdrianoMartins/platform_hardware_qcom_display" remote="github" revision="android-5.0.2" />
+  <project path="bionic" name="AdrianoMartins/android_bionic" remote="github" revision="android-5.0.2" />
+  <project path="external/busybox" name="AdrianoMartins/android_external_busybox" remote="github" revision="android-5.0.2" />
   <project path="frameworks/base" name="AdrianoMartins/platform_frameworks_base" remote="github" revision="android-5.0.2" />
-
+  <project path="external/wpa_supplicant_8" name="AdrianoMartins/platform_external_wpa_supplicant_8" remote="github" revision="android-5.0.2" />
 
   <!-- v500 -->
   <project path="device/lge/v500" name="AdrianoMartins/device_lge_v500" remote="github" revision="android-5.0.2" />
