@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="aosp"
-           fetch=".." />
+  <remote name="aosp" fetch="https://android.googlesource.com" />
+  <remote name="github" fetch="https://github.com/" />
+
   <default revision="refs/tags/android-5.1.0_r1"
            remote="aosp"
            sync-j="4" />
@@ -509,5 +510,35 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
+  
+  <!-- AOSP for LG G Pad (v500) -->
+  
+  
+  <!-- <project path="kernel/lge/v500" name="AdrianoMartins/v500_kernel_aosp" remote="github" revision="android-5.0" /> -->
+  
+  <remove-project name="platform/build" />
+  <remove-project name="platform/system/core"/>
+  <remove-project name="platform/hardware/qcom/display"/>
+  <remove-project name="platform/bionic"/>
+  <remove-project name="platform/frameworks/base"/>
+  <remove-project name="platform/external/wpa_supplicant_8"/>
+  <remove-project name="platform/frameworks/av"/>
+  
+  <project path="build" name="AdrianoMartins/platform_build" remote="github" revision="android-5.1" >
+      <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+  
+  <project path="system/core" name="AdrianoMartins/platform_system_core" remote="github" revision="android-5.1" />
+  <project path="hardware/qcom/display" name="AdrianoMartins/platform_hardware_qcom_display" remote="github" revision="android-5.1" />
+  <project path="bionic" name="AdrianoMartins/android_bionic" remote="github" revision="android-5.1" />
+  <project path="external/busybox" name="AdrianoMartins/android_external_busybox" remote="github" revision="android-5.1" />
+  <project path="frameworks/base" name="AdrianoMartins/platform_frameworks_base" remote="github" revision="android-5.1" />
+  <project path="external/wpa_supplicant_8" name="AdrianoMartins/platform_external_wpa_supplicant_8" remote="github" revision="android-5.1" />
+  <project path="frameworks/av" name="AdrianoMartins/platform_frameworks_av" remote="github" revision="android-5.1" />
+  
+  <!-- v500 -->
+  <project path="device/lge/v500" name="AdrianoMartins/device_lge_v500" remote="github" revision="android-5.1" />
+  <project path="vendor" name="AdrianoMartins/vendor_lge" remote="github" revision="android-5.1" />
+
 
 </manifest>
