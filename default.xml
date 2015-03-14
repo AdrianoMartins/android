@@ -523,7 +523,11 @@
   <remove-project name="platform/frameworks/base"/>
   <remove-project name="platform/external/wpa_supplicant_8"/>
   <remove-project name="platform/frameworks/av"/>
-  
+
+  <remove-project name="platform/system/extras"/>
+  <remove-project name="platform/external/jpeg"/>
+
+
   <project path="build" name="AdrianoMartins/platform_build" remote="github" revision="android-5.1" >
       <copyfile src="core/root.mk" dest="Makefile" />
   </project>
@@ -535,6 +539,10 @@
   <project path="frameworks/base" name="AdrianoMartins/platform_frameworks_base" remote="github" revision="android-5.1" />
   <project path="external/wpa_supplicant_8" name="AdrianoMartins/platform_external_wpa_supplicant_8" remote="github" revision="android-5.1" />
   <project path="frameworks/av" name="AdrianoMartins/platform_frameworks_av" remote="github" revision="android-5.1" />
+  
+  <project path="system/extras" name="AdrianoMartins/platform_system_extras" remote="github" revision="android-5.1" />
+  <project path="external/jpeg" name="AdrianoMartins/platform_external_jpeg" remote="github" revision="android-5.1" />
+ 
   
   <!-- v500 -->
   <project path="device/lge/v500" name="AdrianoMartins/device_lge_v500" remote="github" revision="android-5.1" />
