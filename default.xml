@@ -4,7 +4,7 @@
   <remote name="aosp" fetch="https://android.googlesource.com" />
   <remote name="github" fetch="https://github.com/" />
 
-  <default revision="refs/tags/android-5.1.1_r3"
+  <default revision="refs/tags/android-5.1.1_r4"
            remote="aosp"
            sync-j="4" />
 
@@ -503,6 +503,7 @@
   <remove-project name="platform/build" />
   <remove-project name="platform/system/core"/>
   <remove-project name="platform/hardware/qcom/display"/>
+  <remove-project name="platform/hardware/qcom/media"/>
   <remove-project name="platform/bionic"/>
   <remove-project name="platform/frameworks/base"/>
   <remove-project name="platform/external/wpa_supplicant_8"/>
@@ -518,6 +519,7 @@
   
   <project path="system/core" name="AdrianoMartins/platform_system_core" remote="github" revision="android-5.1" />
   <project path="hardware/qcom/display" name="AdrianoMartins/platform_hardware_qcom_display" remote="github" revision="android-5.1" />
+  <project path="hardware/qcom/media" name="AdrianoMartins/platform_hardware_qcom_media" remote="github" revision="android-5.1" />
   <project path="bionic" name="AdrianoMartins/android_bionic" remote="github" revision="android-5.1" />
   <project path="external/busybox" name="AdrianoMartins/android_external_busybox" remote="github" revision="android-5.1" />
   <project path="frameworks/base" name="AdrianoMartins/platform_frameworks_base" remote="github" revision="android-5.1" />
