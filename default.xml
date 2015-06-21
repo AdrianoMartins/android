@@ -495,11 +495,8 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
   
-  <!-- AOSP for LG G Pad (v500) -->
-  
-  
-  <!-- <project path="kernel/lge/v500" name="AdrianoMartins/v500_kernel_aosp" remote="github" revision="android-5.0" /> -->
-  
+  <!-- My Repos -->
+ 
   <remove-project name="platform/build" />
   <remove-project name="platform/system/core"/>
   <remove-project name="platform/hardware/qcom/display"/>
@@ -508,10 +505,8 @@
   <remove-project name="platform/frameworks/base"/>
   <remove-project name="platform/external/wpa_supplicant_8"/>
   <remove-project name="platform/frameworks/av"/>
-
   <remove-project name="platform/system/extras"/>
   <remove-project name="platform/external/jpeg"/>
-
 
   <project path="build" name="AdrianoMartins/platform_build" remote="github" revision="android-5.1" >
       <copyfile src="core/root.mk" dest="Makefile" />
@@ -528,11 +523,5 @@
   
   <project path="system/extras" name="AdrianoMartins/platform_system_extras" remote="github" revision="android-5.1" />
   <project path="external/jpeg" name="AdrianoMartins/platform_external_jpeg" remote="github" revision="android-5.1" />
- 
-  
-  <!-- v500 -->
-  <project path="device/lge/v500" name="AdrianoMartins/device_lge_v500" remote="github" revision="android-5.1" />
-  <project path="vendor" name="AdrianoMartins/vendor_lge" remote="github" revision="android-5.1" />
-
 
 </manifest>
