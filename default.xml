@@ -510,6 +510,7 @@
   <remove-project name="platform/packages/apps/Launcher3"/>
   <remove-project name="platform/packages/apps/Camera2"/>
   <remove-project name="platform/packages/apps/Browser"/>
+  <remove-project name="platform/frameworks/webview"/>
   
   <project path="build" name="AdrianoMartins/platform_build" remote="github" revision="android-5.1" >
       <copyfile src="core/root.mk" dest="Makefile" />
@@ -523,6 +524,7 @@
   <project path="frameworks/base" name="AdrianoMartins/platform_frameworks_base" remote="github" revision="android-5.1" />
   <project path="external/wpa_supplicant_8" name="AdrianoMartins/platform_external_wpa_supplicant_8" remote="github" revision="android-5.1" />
   <project path="frameworks/av" name="AdrianoMartins/platform_frameworks_av" remote="github" revision="android-5.1" />
+  <project path="frameworks/webview" name="AdrianoMartins/platform_frameworks_webview" remote="github" revision="android-5.1" />
   
   <project path="system/extras" name="AdrianoMartins/platform_system_extras" remote="github" revision="android-5.1" />
   <project path="external/jpeg" name="AdrianoMartins/platform_external_jpeg" remote="github" revision="android-5.1" />
