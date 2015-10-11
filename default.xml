@@ -514,7 +514,9 @@
 
   <project path="packages/apps/Launcher3" name="AdrianoMartins/platform_packages_apps_Launcher3" remote="github" revision="android-5.1" />
   <project path="packages/apps/Camera2" name="AdrianoMartins/platform_packages_apps_Camera2" remote="github" revision="android-5.1" />
-  <project path="packages/apps/Browser" name="omnirom/android_packages_apps_Browser" remote="github" revision="android-5.1" />
-  <project path="packages/apps/Apollo" name="omnirom/android_packages_apps_Apollo" remote="github" revision="android-5.1" />
+  <project path="packages/apps/Browser" name="AdrianoMartins/android_packages_apps_Browser" remote="github" revision="android-5.1" />
+  <project path="packages/apps/Eleven" name="AdrianoMartins/android_packages_apps_Eleven" remote="github" revision="android-5.1" />
+  <project path="packages/apps/AudioFX" name="AdrianoMartins/android_packages_apps_AudioFX" remote="github" revision="android-5.1" />
+  <project path="external/android-visualizer" name="AdrianoMartins/android_external_android-visualizer" remote="github" revision="android-5.1" />
 
 </manifest>
