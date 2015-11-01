@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="aosp"
-           fetch=".." />
+  <remote name="aosp" fetch="https://android.googlesource.com" />
+  <remote name="github" fetch="https://github.com/" />
+
   <default revision="refs/tags/android-6.0.0_r5"
            remote="aosp"
            sync-j="4" />
@@ -474,5 +475,41 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
+
+<!-- My Repos -->
+
+<remove-project name="platform/bionic"/>
+<remove-project name="platform/build" />
+<remove-project name="platform/external/libpng"/>
+<remove-project name="platform/external/chromium-webview"/>
+<remove-project name="platform/frameworks/base"/>
+<remove-project name="platform/hardware/qcom/display"/>
+<remove-project name="platform/hardware/qcom/media"/>
+<remove-project name="platform/hardware/qcom/power"/>
+<remove-project name="platform/system/core"/>
+<remove-project name="platform/system/extras"/>
+
+<project path="build" name="AdrianoMartins/platform_build" remote="github" revision="android-6.0" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+</project>
+
+<project path="bionic" name="AdrianoMartins/android_bionic" remote="github" revision="android-6.0" />
+<project path="external/libpng" name="AdrianoMartins/platform_external_libpng" remote="github" revision="android-6.0" />
+<project path="external/chromium-webview" name="AdrianoMartins/external_chromium-webview" remote="github" revision="android-6.0" />
+<project path="frameworks/base" name="AdrianoMartins/platform_frameworks_base" remote="github" revision="android-6.0" />
+<project path="hardware/qcom/display" name="AdrianoMartins/platform_hardware_qcom_display" remote="github" revision="android-6.0" />
+<project path="hardware/qcom/media" name="AdrianoMartins/platform_hardware_qcom_media" remote="github" revision="android-6.0" />
+<project path="hardware/qcom/power" name="AdrianoMartins/platform_hardware_qcom_power" remote="github" revision="android-6.0" />
+<project path="system/core" name="AdrianoMartins/platform_system_core" remote="github" revision="android-6.0" />
+<project path="system/extras" name="AdrianoMartins/platform_system_extras" remote="github" revision="android-6.0" />
+
+<!-- Extras -->
+<project path="external/busybox" name="AdrianoMartins/android_external_busybox" remote="github" revision="android-6.0" />
+
+<!-- Device - v500 -->
+
+<project path="kernel/lge/v500" name="AdrianoMartins/android_kernel_lge_v500" remote="github" revision="android-6.0" />
+<project path="device/lge/v500" name="AdrianoMartins/device_lge_v500" remote="github" revision="android-6.0" />
+<project path="vendor/lge" name="AdrianoMartins/proprietary_vendor_lge" remote="github" revision="android-6.0" />
 
 </manifest>
