@@ -483,6 +483,7 @@
 <remove-project name="platform/external/libpng"/>
 <remove-project name="platform/external/chromium-webview"/>
 <remove-project name="platform/frameworks/base"/>
+<remove-project name="platform/frameworks/av"/>
 <remove-project name="platform/hardware/qcom/display"/>
 <remove-project name="platform/hardware/qcom/media"/>
 <remove-project name="platform/hardware/qcom/power"/>
@@ -497,6 +498,7 @@
 <project path="external/libpng" name="AdrianoMartins/platform_external_libpng" remote="github" revision="android-6.0" />
 <project path="external/chromium-webview" name="AdrianoMartins/external_chromium-webview" remote="github" revision="android-6.0" />
 <project path="frameworks/base" name="AdrianoMartins/platform_frameworks_base" remote="github" revision="android-6.0" />
+<project path="frameworks/av" name="AdrianoMartins/platform_frameworks_av" remote="github" revision="android-6.0" />
 <project path="hardware/qcom/display" name="AdrianoMartins/platform_hardware_qcom_display" remote="github" revision="android-6.0" />
 <project path="hardware/qcom/media" name="AdrianoMartins/platform_hardware_qcom_media" remote="github" revision="android-6.0" />
 <project path="hardware/qcom/power" name="AdrianoMartins/platform_hardware_qcom_power" remote="github" revision="android-6.0" />
