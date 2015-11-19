@@ -491,6 +491,7 @@
 <remove-project name="platform/hardware/qcom/power"/>
 <remove-project name="platform/system/core"/>
 <remove-project name="platform/system/extras"/>
+<remove-project name="platform/packages/apps/Settings"/>
 
 <project path="build" name="AdrianoMartins/platform_build" remote="github" revision="android-6.0" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -507,6 +508,7 @@
 <project path="hardware/qcom/power" name="AdrianoMartins/platform_hardware_qcom_power" remote="github" revision="android-6.0" />
 <project path="system/core" name="AdrianoMartins/platform_system_core" remote="github" revision="android-6.0" />
 <project path="system/extras" name="AdrianoMartins/platform_system_extras" remote="github" revision="android-6.0" />
+<project path="packages/apps/Settings" name="AdrianoMartins/platform_packages_apps_settings" remote="github" revision="android-6.0" />
 
 <!-- Extras -->
 <project path="external/busybox" name="AdrianoMartins/android_external_busybox" remote="github" revision="android-6.0" />
