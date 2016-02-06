@@ -475,6 +475,7 @@
 <remove-project name="platform/external/libpng"/>
 <remove-project name="platform/external/chromium-webview"/>
 <remove-project name="platform/external/compiler-rt"/>
+<remove-project name="platform/external/e2fsprogs"/>
 <remove-project name="platform/frameworks/base"/>
 <remove-project name="platform/frameworks/av"/>
 <remove-project name="platform/hardware/qcom/audio"/>
@@ -495,6 +496,7 @@
 <project path="external/libpng" name="AdrianoMartins/platform_external_libpng" remote="github" revision="android-6.0" />
 <project path="external/chromium-webview" name="AdrianoMartins/external_chromium-webview" remote="github" revision="android-6.0" />
 <project path="external/compiler-rt" name="AdrianoMartins/platform_external_compiler-rt" remote="github" revision="android-6.0" />
+<project path="external/e2fsprogs" name="AdrianoMartins/platform_external_e2fsprogs" remote="github" revision="android-6.0" />
 <project path="frameworks/base" name="AdrianoMartins/platform_frameworks_base" remote="github" revision="android-6.0" />
 <project path="frameworks/av" name="AdrianoMartins/platform_frameworks_av" remote="github" revision="android-6.0" />
 <project path="hardware/qcom/audio" name="AdrianoMartins/platform_hardware_qcom_audio" remote="github" revision="android-6.0" />
