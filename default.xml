@@ -505,7 +505,7 @@
 <project path="hardware/qcom/power" name="AdrianoMartins/platform_hardware_qcom_power" remote="github" revision="android-6.0" />
 <project path="system/core" name="AdrianoMartins/platform_system_core" remote="github" revision="android-6.0" />
 <project path="system/extras" name="AdrianoMartins/platform_system_extras" remote="github" revision="android-6.0" />
-<project path="system/vold" name="omnirom/platform_system_vold" remote="github" revision="android-6.0" />
+<project path="system/vold" name="omnirom/android_system_vold" remote="github" revision="android-6.0" />
 <project path="packages/apps/Settings" name="AdrianoMartins/platform_packages_apps_settings" remote="github" revision="android-6.0" />
 <project path="packages/apps/Camera2" name="AdrianoMartins/platform_packages_apps_Camera2" remote="github" revision="android-6.0" />
 
