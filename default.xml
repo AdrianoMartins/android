@@ -523,7 +523,7 @@
 <project path="vendor/lge" name="AdrianoMartins/proprietary_vendor_lge" remote="github" revision="android-6.0" />
 
 <!-- Gapps -->
-<project path="vendor/google/build" name="AdrianoMartins/aosp_build" revision="master" remote="github" />
+<project path="vendor/google/build" name="aosp_build" revision="master" remote="opengapps" />
 <project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="opengapps" />
 <project path="vendor/opengapps/sources/arm" name="arm" clone-depth="1" revision="master" remote="opengapps" />
 </manifest>
