@@ -494,7 +494,6 @@
 
 <project path="bionic" name="AdrianoMartins/android_bionic" remote="github" revision="android-6.0" />
 <project path="external/libpng" name="AdrianoMartins/platform_external_libpng" remote="github" revision="android-6.0" />
-<project path="external/chromium-webview" name="AdrianoMartins/external_chromium-webview" remote="github" revision="android-6.0" />
 <project path="external/compiler-rt" name="AdrianoMartins/platform_external_compiler-rt" remote="github" revision="android-6.0" />
 <project path="external/e2fsprogs" name="AdrianoMartins/platform_external_e2fsprogs" remote="github" revision="android-6.0" />
 <project path="frameworks/base" name="AdrianoMartins/platform_frameworks_base" remote="github" revision="android-6.0" />
