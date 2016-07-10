@@ -487,6 +487,7 @@
 <remove-project name="platform/system/vold"/>
 <remove-project name="platform/packages/apps/Settings"/>
 <remove-project name="platform/packages/apps/Camera2"/>
+<remove-project name="platform/packages/providers/MediaProvider"/>
 
 <project path="build" name="AdrianoMartins/platform_build" remote="github" revision="android-6.0" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -507,6 +508,7 @@
 <project path="system/vold" name="AdrianoMartins/platform_system_vold" remote="github" revision="android-6.0" />
 <project path="packages/apps/Settings" name="AdrianoMartins/platform_packages_apps_settings" remote="github" revision="android-6.0" />
 <project path="packages/apps/Camera2" name="AdrianoMartins/platform_packages_apps_Camera2" remote="github" revision="android-6.0" />
+<project path="packages/providers/MediaProvider" name="AdrianoMartins/platform/packages/providers/MediaProvider" remote="github" revision="android-6.0" />
 
 <!-- Extras -->
 <project path="external/busybox" name="AdrianoMartins/android_external_busybox" remote="github" revision="android-6.0" />
