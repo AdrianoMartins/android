@@ -508,7 +508,7 @@
 <project path="system/vold" name="AdrianoMartins/platform_system_vold" remote="github" revision="android-6.0" />
 <project path="packages/apps/Settings" name="AdrianoMartins/platform_packages_apps_settings" remote="github" revision="android-6.0" />
 <project path="packages/apps/Camera2" name="AdrianoMartins/platform_packages_apps_Camera2" remote="github" revision="android-6.0" />
-<project path="packages/providers/MediaProvider" name="AdrianoMartins/platform/packages/providers/MediaProvider" remote="github" revision="android-6.0" />
+<project path="packages/providers/MediaProvider" name="AdrianoMartins/platform_packages_providers_mediaprovider" remote="github" revision="android-6.0" />
 
 <!-- Extras -->
 <project path="external/busybox" name="AdrianoMartins/android_external_busybox" remote="github" revision="android-6.0" />
