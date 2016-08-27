@@ -523,11 +523,8 @@
 
 <!-- Gapps -->
 <project path="vendor/google/build" name="AdrianoMartins/aosp_build" revision="master" remote="github" />
-
-<!--
 <project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="opengapps" />
 <project path="vendor/opengapps/sources/arm" name="arm" clone-depth="1" revision="master" remote="opengapps" />
--->
 
 <!-- Toolchain -->
 <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9"/>
