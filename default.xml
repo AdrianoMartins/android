@@ -605,6 +605,11 @@
 <!-- Extras -->
 <project path="external/busybox" name="AdrianoMartins/android_external_busybox" remote="github" revision="android-7.1" />
 
+<!-- exFAT and NTFS -->
+<project path="external/exfat" name="AdrianoMartins/platform_external_exfat" remote="github" revision="android-7.1" />
+<project path="external/ntfs-3g" name="AdrianoMartins/platform_external_ntfs-3g" remote="github" revision="android-7.1" />
+<project path="external/fuse" name="AdrianoMartins/platform_external_fuse" remote="github" revision="android-7.1" />
+
 <!-- Device - v500 -->
 
 <project path="kernel/lge/v500" name="AdrianoMartins/android_kernel_lge_v500" remote="github" revision="android-7.1" />
