@@ -576,8 +576,7 @@
 <remove-project name="platform/system/sepolicy"/>
 <remove-project name="platform/packages/apps/Camera2"/>
 <remove-project name="platform/packages/apps/Settings"/>
-
-<!-- <remove-project name="platform/external/chromium-webview"/> -->
+<remove-project name="platform/external/chromium-webview"/>
 
 <project path="build" name="AdrianoMartins/platform_build" remote="github" revision="android-7.1" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -604,6 +603,9 @@
 
 <!-- Extras -->
 <project path="external/busybox" name="AdrianoMartins/android_external_busybox" remote="github" revision="android-7.1" />
+
+<!-- UBERROMS -->
+<project path="external/chromium-webview" name="UBERROMS/external_chromium-webview" remote="github" revision="master" />
 
 <!-- exFAT and NTFS -->
 <project path="external/exfat" name="AdrianoMartins/platform_external_exfat" remote="github" revision="android-7.1" />
