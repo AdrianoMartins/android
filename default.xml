@@ -604,6 +604,9 @@
 <!-- Extras -->
 <project path="external/busybox" name="AdrianoMartins/android_external_busybox" remote="github" revision="android-7.1" />
 
+<!-- Snapdragon LLVM Compiler -->
+<project path="vendor/qcom/sdclang-3.8" name="AdrianoMartins/android_vendor_qcom_sdclang-3.8" remote="github" revision="android-7.1"/>
+
 <!-- UBERROMS -->
 <project path="external/chromium-webview" name="UBERROMS/external_chromium-webview" remote="github" revision="master" />
 
