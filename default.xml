@@ -576,7 +576,6 @@
 <remove-project name="platform/system/sepolicy"/>
 <remove-project name="platform/packages/apps/Camera2"/>
 <remove-project name="platform/packages/apps/Settings"/>
-<remove-project name="platform/external/chromium-webview"/>
 <remove-project name="platform/art"/>
 <remove-project name="platform/external/skia"/>
 
@@ -610,9 +609,6 @@
 
 <!-- Snapdragon LLVM Compiler -->
 <project path="vendor/qcom/sdclang-3.8" name="AdrianoMartins/android_vendor_qcom_sdclang-3.8" remote="github" revision="android-7.1"/>
-
-<!-- UBERROMS -->
-<project path="external/chromium-webview" name="UBERROMS/external_chromium-webview" remote="github" revision="master" />
 
 <!-- exFAT and NTFS -->
 <project path="external/exfat" name="AdrianoMartins/platform_external_exfat" remote="github" revision="android-7.1" />
