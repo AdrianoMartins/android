@@ -578,6 +578,8 @@
 <remove-project name="platform/packages/apps/Settings"/>
 <remove-project name="platform/art"/>
 <remove-project name="platform/external/skia"/>
+<remove-project name="platform/external/zlib"/>
+<remove-project name="platform/external/libjpeg-turbo"/>
 
 <project path="build" name="AdrianoMartins/platform_build" remote="github" revision="android-7.1" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -603,6 +605,8 @@
 <project path="system/sepolicy" name="AdrianoMartins/platform_system_sepolicy" remote="github" revision="android-7.1" />
 <project path="packages/apps/Camera2" name="AdrianoMartins/platform_packages_apps_Camera2" remote="github" revision="android-7.1" />
 <project path="packages/apps/Settings" name="AdrianoMartins/platform_packages_apps_Settings" remote="github" revision="android-7.1" />
+<project path="external/libjpeg-turbo" name="AdrianoMartins/android_external_libjpeg-turbo" remote="github" revision="android-7.1" />
+<project path="external/zlib" name="AdrianoMartins/android_external_zlib" remote="github" revision="android-7.1" />
 
 <!-- Extras -->
 <project path="external/busybox" name="AdrianoMartins/android_external_busybox" remote="github" revision="android-7.1" />
