@@ -564,6 +564,7 @@
 <remove-project name="platform/frameworks/base"/>
 <remove-project name="platform/frameworks/av"/>
 <remove-project name="platform/frameworks/native"/>
+<remove-project name="platform/frameworks/opt/net/wifi"/>
 <remove-project name="platform/hardware/qcom/audio"/>
 <remove-project name="platform/hardware/qcom/display"/>
 <remove-project name="platform/hardware/qcom/media"/>
@@ -593,6 +594,7 @@
 <project path="frameworks/base" name="AdrianoMartins/platform_frameworks_base" remote="github" revision="android-7.1" />
 <project path="frameworks/av" name="AdrianoMartins/platform_frameworks_av" remote="github" revision="android-7.1" />
 <project path="frameworks/native" name="AdrianoMartins/platform_frameworks_native" remote="github" revision="android-7.1" />
+<project path="frameworks/opt/net/wifi" name="AdrianoMartins/platform_frameworks_opt_net_wifi" remote="github" revision="android-7.1" />
 <project path="hardware/qcom/audio" name="AdrianoMartins/platform_hardware_qcom_audio" remote="github" revision="android-7.1" />
 <project path="hardware/qcom/display" name="AdrianoMartins/platform_hardware_qcom_display" remote="github" revision="android-7.1" />
 <project path="hardware/qcom/media" name="AdrianoMartins/platform_hardware_qcom_media" remote="github" revision="android-7.1" />
