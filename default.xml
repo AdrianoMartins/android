@@ -582,6 +582,7 @@
 <remove-project name="platform/external/zlib"/>
 <remove-project name="platform/external/libjpeg-turbo"/>
 <remove-project name="platform/external/sqlite"/>
+<remove-project name="platform/external/vixl"/>
 
 <project path="build" name="AdrianoMartins/platform_build" remote="github" revision="android-7.1" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -611,6 +612,7 @@
 <project path="external/libjpeg-turbo" name="AdrianoMartins/android_external_libjpeg-turbo" remote="github" revision="android-7.1" />
 <project path="external/zlib" name="AdrianoMartins/android_external_zlib" remote="github" revision="android-7.1" />
 <project path="external/sqlite" name="AdrianoMartins/android_external_sqlite" remote="github" revision="android-7.1" />
+<project path="external/vixl" name="AdrianoMartins/platform_external_vixl" remote="github" revision="android-7.1" />
 
 <!-- Extras -->
 <project path="external/busybox" name="AdrianoMartins/android_external_busybox" remote="github" revision="android-7.1" />
