@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="aosp"
-           fetch=".."
-           review="https://android-review.googlesource.com/" />
-  <default revision="nougat-mr2-release"
-           remote="aosp"
-           sync-j="4" />
+<remote  name="aosp"
+fetch="https://android.googlesource.com" />
+
+<remote name = "gh"
+fetch = "https://github.com/" />
+
+<remote name="github" fetch="https://github.com/" />
+
+<remote name = "uber"
+revision = "master"
+fetch = "https://github.com/UBERROMS" />
+
+<remote name = "bb"
+revision = "master"
+fetch = "https://bitbucket.org/" />
+
+<default revision="nougat-mr1-release"
+remote="aosp"
+sync-j="4" />
 
   <project path="build" name="platform/build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -95,9 +108,9 @@
   <project path="external/chromium-libpac" name="platform/external/chromium-libpac" groups="pdk" />
   <project path="external/chromium-trace" name="platform/external/chromium-trace" groups="pdk" />
   <project path="external/chromium-webview" name="platform/external/chromium-webview" groups="pdk" />
-  <project path="external/clang" name="platform/external/clang" groups="pdk" />
+  <project path="external/clang" name="external_clang" groups="pdk" remote="uber" />
   <project path="external/cmockery" name="platform/external/cmockery" groups="pdk" />
-  <project path="external/compiler-rt" name="platform/external/compiler-rt" groups="pdk" />
+  <project path="external/compiler-rt" name="external_compiler-rt" groups="pdk" remote="uber" />
   <project path="external/conscrypt" name="platform/external/conscrypt" groups="pdk" />
   <project path="external/crcalc" name="platform/external/crcalc" groups="pdk" />
   <project path="external/cros/system_api" name="platform/external/cros/system_api" groups="pdk" />
@@ -131,7 +144,7 @@
   <project path="external/fdlibm" name="platform/external/fdlibm" groups="pdk" />
   <project path="external/fec" name="platform/external/fec" groups="pdk" />
   <project path="external/fio" name="platform/external/fio" groups="pdk" />
-  <project path="external/flac" name="platform/external/flac" groups="pdk" />
+  <project path="external/flac" name="external_flac" remote="uber" />
   <project path="external/fonttools" name="platform/external/fonttools" groups="pdk" />
   <project path="external/freetype" name="platform/external/freetype" groups="pdk" />
   <project path="external/fsck_msdos" name="platform/external/fsck_msdos" groups="pdk" />
@@ -167,7 +180,7 @@
   <project path="external/javassist" name="platform/external/javassist" groups="pdk" />
   <project path="external/jcommander" name="platform/external/jcommander" groups="pdk" />
   <project path="external/jdiff" name="platform/external/jdiff" groups="pdk" />
-  <project path="external/jemalloc" name="platform/external/jemalloc" groups="pdk" />
+  <project path="external/jemalloc" name="external_jemalloc" groups="pdk" remote="uber" />
   <project path="external/jetty" name="platform/external/jetty" groups="pdk" />
   <project path="external/jhead" name="platform/external/jhead" groups="pdk" />
   <project path="external/jline" name="platform/external/jline" groups="notdefault,tradefed,pdk-fs" />
@@ -197,7 +210,7 @@
   <project path="external/libgdx" name="platform/external/libgdx" groups="pdk" />
   <project path="external/libgsm" name="platform/external/libgsm" groups="pdk" />
   <project path="external/libhevc" name="platform/external/libhevc" groups="pdk" />
-  <project path="external/libjpeg-turbo" name="platform/external/libjpeg-turbo" groups="pdk" />
+  <project path="external/libjpeg-turbo" name="external_libjpeg-turbo" remote="uber" />
   <project path="external/liblzf" name="platform/external/liblzf" groups="pdk" />
   <project path="external/libmicrohttpd" name="platform/external/libmicrohttpd" groups="pdk" />
   <project path="external/libmpeg2" name="platform/external/libmpeg2" groups="pdk" />
@@ -209,7 +222,7 @@
   <project path="external/libopus" name="platform/external/libopus" groups="pdk" />
   <project path="external/libpcap" name="platform/external/libpcap" groups="pdk" />
   <project path="external/libphonenumber" name="platform/external/libphonenumber" groups="pdk" />
-  <project path="external/libpng" name="platform/external/libpng" groups="pdk" />
+  <project path="external/libpng" name="external_libpng" remote="uber" />
   <project path="external/libselinux" name="platform/external/libselinux" groups="pdk" />
   <project path="external/libunwind" name="platform/external/libunwind" groups="pdk" />
   <project path="external/libunwind_llvm" name="platform/external/libunwind_llvm" groups="pdk" />
@@ -226,7 +239,7 @@
   <project path="external/littlemock" name="platform/external/littlemock" groups="pdk" />
   <project path="external/lld" name="platform/external/lld" groups="pdk" />
   <project path="external/lldb" name="platform/external/lldb" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/llvm" name="platform/external/llvm" groups="pdk" />
+  <project path="external/llvm" name="external_llvm" groups="pdk" remote="uber" />
   <project path="external/ltrace" name="platform/external/ltrace" groups="pdk" />
   <project path="external/lz4" name="platform/external/lz4" groups="pdk" />
   <project path="external/lzma" name="platform/external/lzma" groups="pdk" />
@@ -280,7 +293,7 @@
   <project path="external/selinux" name="platform/external/selinux" groups="pdk" />
   <project path="external/shflags" name="platform/external/shflags" groups="pdk" />
   <project path="external/sfntly" name="platform/external/sfntly" groups="pdk,qcom_msm8x26" />
-  <project path="external/skia" name="platform/external/skia" groups="pdk,qcom_msm8x26" />
+  <project path="external/skia" name="external_skia" remote="uber" />
   <project path="external/sl4a" name="platform/external/sl4a" groups="pdk" />
   <project path="external/slf4j" name="platform/external/slf4j" groups="pdk" />
   <project path="external/smali" name="platform/external/smali" groups="pdk" />
@@ -288,7 +301,7 @@
   <project path="external/sonic" name="platform/external/sonic" groups="pdk" />
   <project path="external/sonivox" name="platform/external/sonivox" groups="pdk" />
   <project path="external/speex" name="platform/external/speex" groups="pdk" />
-  <project path="external/sqlite" name="platform/external/sqlite" groups="pdk" />
+  <project path="external/sqlite" name="external_sqlite" remote="uber" />
   <project path="external/squashfs-tools" name="platform/external/squashfs-tools" groups="pdk" />
   <project path="external/srtp" name="platform/external/srtp" groups="pdk" />
   <project path="external/strace" name="platform/external/strace" groups="pdk" />
@@ -319,14 +332,14 @@
   <project path="external/xmlrpcpp" name="platform/external/xmlrpcpp" groups="pdk" />
   <project path="external/xmlwriter" name="platform/external/xmlwriter" groups="pdk" />
   <project path="external/xmp_toolkit" name="platform/external/xmp_toolkit" groups="pdk" />
-  <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
+  <project path="external/zlib" name="external_zlib" groups="pdk" remote="uber" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk" />
   <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
   <project path="frameworks/base" name="platform/frameworks/base" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
-  <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
-  <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
+  <project path="frameworks/compile/libbcc" name="frameworks_compile_libbcc" groups="pdk" remote="uber" />
+  <project path="frameworks/compile/mclinker" name="frameworks_compile_mclinker" groups="pdk" remote="uber" />
+  <project path="frameworks/compile/slang" name="frameworks_compile_slang" groups="pdk" remote="uber" />
   <project path="frameworks/ex" name="platform/frameworks/ex" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs,pdk-fs" />
@@ -350,8 +363,8 @@
   <project path="frameworks/opt/telephony" name="platform/frameworks/opt/telephony" groups="pdk" />
   <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/rs" name="platform/frameworks/rs" groups="pdk" />
-  <project path="frameworks/support" name="platform/frameworks/support" groups="pdk-cw-fs,pdk-fs" />
+  <project path="frameworks/rs" name="frameworks_rs" groups="pdk" remote="uber" />
+  <project path="frameworks/support" name="frameworks_support" groups="pdk" remote="uber" />
   <project path="frameworks/data-binding" name="platform/frameworks/data-binding" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/volley" name="platform/frameworks/volley" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/webview" name="platform/frameworks/webview" groups="pdk-cw-fs,pdk-fs" />
@@ -399,7 +412,7 @@
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" groups="omap3,pdk" />
   <project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah,pdk" />
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" groups="omap4,pdk" />
-  <project path="libcore" name="platform/libcore" groups="pdk" />
+  <project path="libcore" name="libcore" remote="uber" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
   <project path="ndk" name="platform/ndk" groups="generic_fs" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" groups="pdk-cw-fs,pdk-fs" />
@@ -515,7 +528,7 @@
   <project path="prebuilts/python/darwin-x86/2.7.5" name="platform/prebuilts/python/darwin-x86/2.7.5" groups="darwin,pdk,pdk-cw-fs,pdk-fs" />
   <project path="prebuilts/python/linux-x86/2.7.5" name="platform/prebuilts/python/linux-x86/2.7.5" groups="linux,pdk,pdk-cw-fs,pdk-fs" />
   <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" groups="pdk" clone-depth="1" />
-  <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk" />
+  <project path="prebuilts/sdk" name="prebuilts_sdk" groups="pdk" remote="uber" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" />
   <project path="system/bt" name="platform/system/bt" groups="pdk" />
@@ -559,11 +572,9 @@
 
 <remove-project name="platform/bionic"/>
 <remove-project name="platform/build" />
-<remove-project name="platform/external/libpng"/>
 <remove-project name="platform/external/e2fsprogs"/>
 <remove-project name="platform/frameworks/base"/>
 <remove-project name="platform/frameworks/av"/>
-<remove-project name="platform/frameworks/rs"/>
 <remove-project name="platform/frameworks/native"/>
 <remove-project name="platform/frameworks/opt/net/wifi"/>
 <remove-project name="platform/hardware/qcom/audio"/>
@@ -579,10 +590,6 @@
 <remove-project name="platform/packages/apps/Camera2"/>
 <remove-project name="platform/packages/apps/Settings"/>
 <remove-project name="platform/art"/>
-<remove-project name="platform/external/skia"/>
-<remove-project name="platform/external/zlib"/>
-<remove-project name="platform/external/libjpeg-turbo"/>
-<remove-project name="platform/external/sqlite"/>
 <remove-project name="platform/external/vixl"/>
 <remove-project name="platform/bootable/recovery"/>
 
@@ -592,12 +599,9 @@
 
 <project path="bionic" name="AdrianoMartins/android_bionic" remote="github" revision="android-7.1" />
 <project path="art" name="AdrianoMartins/android_art" remote="github" revision="android-7.1" />
-<project path="external/libpng" name="AdrianoMartins/platform_external_libpng" remote="github" revision="android-7.1" />
-<project path="external/skia" name="AdrianoMartins/android_external_skia" remote="github" revision="android-7.1" />
 <project path="external/e2fsprogs" name="AdrianoMartins/platform_external_e2fsprogs" remote="github" revision="android-7.1" />
 <project path="frameworks/base" name="AdrianoMartins/platform_frameworks_base" remote="github" revision="android-7.1" />
 <project path="frameworks/av" name="AdrianoMartins/platform_frameworks_av" remote="github" revision="android-7.1" />
-<project path="frameworks/rs" name="AdrianoMartins/platform_frameworks_rs" remote="github" revision="android-7.1" />
 <project path="frameworks/native" name="AdrianoMartins/platform_frameworks_native" remote="github" revision="android-7.1" />
 <project path="frameworks/opt/net/wifi" name="AdrianoMartins/platform_frameworks_opt_net_wifi" remote="github" revision="android-7.1" />
 <project path="hardware/qcom/audio" name="AdrianoMartins/platform_hardware_qcom_audio" remote="github" revision="android-7.1" />
@@ -612,9 +616,6 @@
 <project path="system/sepolicy" name="AdrianoMartins/platform_system_sepolicy" remote="github" revision="android-7.1" />
 <project path="packages/apps/Camera2" name="AdrianoMartins/platform_packages_apps_Camera2" remote="github" revision="android-7.1" />
 <project path="packages/apps/Settings" name="AdrianoMartins/platform_packages_apps_Settings" remote="github" revision="android-7.1" />
-<project path="external/libjpeg-turbo" name="AdrianoMartins/android_external_libjpeg-turbo" remote="github" revision="android-7.1" />
-<project path="external/zlib" name="AdrianoMartins/android_external_zlib" remote="github" revision="android-7.1" />
-<project path="external/sqlite" name="AdrianoMartins/android_external_sqlite" remote="github" revision="android-7.1" />
 <project path="external/vixl" name="AdrianoMartins/platform_external_vixl" remote="github" revision="android-7.1" />
 <project path="bootable/recovery" name="AdrianoMartins/bootable_recovery" remote="github" revision="android-7.1" />
 
@@ -622,7 +623,11 @@
 <project path="external/busybox" name="AdrianoMartins/android_external_busybox" remote="github" revision="android-7.1" />
 
 <!-- Snapdragon LLVM Compiler -->
-<project path="vendor/qcom/sdclang-3.8" name="AdrianoMartins/android_vendor_qcom_sdclang-3.8" remote="github" revision="android-7.1"/>
+<project path="prebuilts/clang/host/linux-x86/3.8" name="AdrianoMartins/android_vendor_qcom_sdclang-3.8" remote="github" revision="android-7.1"/>
+
+<!-- Compiler -->
+<project path="prebuilts/build-tools" name="uberroms/prebuilts_build-tools" remote="bb" revision="master" />
+<project path="prebuilts/clang/host/linux-x86/3.9" name="uberroms/clang_linux-x86_3.x" remote="bb" />
 
 <!-- exFAT and NTFS -->
 <project path="external/exfat" name="AdrianoMartins/platform_external_exfat" remote="github" revision="android-7.1" />
