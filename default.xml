@@ -17,7 +17,7 @@ fetch = "https://github.com/UBERROMS" />
 revision = "master"
 fetch = "https://bitbucket.org/" />
 
-<default revision="nougat-mr1-release"
+<default revision="nougat-mr2-release"
 remote="aosp"
 sync-j="4" />
 
