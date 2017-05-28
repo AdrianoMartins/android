@@ -592,6 +592,7 @@ sync-j="4" />
 <remove-project name="platform/art"/>
 <remove-project name="platform/external/vixl"/>
 <remove-project name="platform/bootable/recovery"/>
+<remove-project name="external/ipsec-tools"/>
 
 <project path="build" name="AdrianoMartins/platform_build" remote="github" revision="android-7.1" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -618,6 +619,7 @@ sync-j="4" />
 <project path="packages/apps/Settings" name="AdrianoMartins/platform_packages_apps_Settings" remote="github" revision="android-7.1" />
 <project path="external/vixl" name="AdrianoMartins/platform_external_vixl" remote="github" revision="android-7.1" />
 <project path="bootable/recovery" name="AdrianoMartins/bootable_recovery" remote="github" revision="android-7.1" />
+<project path="external/ipsec-tools" name="AdrianoMartins/android_external_ipsec-tools" remote="github" revision="android-7.1" />
 
 <!-- Extras -->
 <project path="external/busybox" name="AdrianoMartins/android_external_busybox" remote="github" revision="android-7.1" />
