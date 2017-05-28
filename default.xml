@@ -592,7 +592,7 @@ sync-j="4" />
 <remove-project name="platform/art"/>
 <remove-project name="platform/external/vixl"/>
 <remove-project name="platform/bootable/recovery"/>
-<remove-project name="external/ipsec-tools"/>
+<remove-project name="platform/external/ipsec-tools"/>
 
 <project path="build" name="AdrianoMartins/platform_build" remote="github" revision="android-7.1" >
     <copyfile src="core/root.mk" dest="Makefile" />
