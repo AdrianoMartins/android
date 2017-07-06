@@ -9,10 +9,6 @@ fetch = "https://github.com/" />
 
 <remote name="github" fetch="https://github.com/" />
 
-<remote name = "uber"
-revision = "master"
-fetch = "https://github.com/UBERROMS" />
-
 <remote name = "bb"
 revision = "master"
 fetch = "https://bitbucket.org/" />
@@ -144,7 +140,7 @@ sync-j="4" />
   <project path="external/fdlibm" name="platform/external/fdlibm" groups="pdk" />
   <project path="external/fec" name="platform/external/fec" groups="pdk" />
   <project path="external/fio" name="platform/external/fio" groups="pdk" />
-  <project path="external/flac" name="external_flac" remote="uber" />
+  <project path="external/flac" name="external_flac" />
   <project path="external/fonttools" name="platform/external/fonttools" groups="pdk" />
   <project path="external/freetype" name="platform/external/freetype" groups="pdk" />
   <project path="external/fsck_msdos" name="platform/external/fsck_msdos" groups="pdk" />
@@ -180,7 +176,7 @@ sync-j="4" />
   <project path="external/javassist" name="platform/external/javassist" groups="pdk" />
   <project path="external/jcommander" name="platform/external/jcommander" groups="pdk" />
   <project path="external/jdiff" name="platform/external/jdiff" groups="pdk" />
-  <project path="external/jemalloc" name="external_jemalloc" groups="pdk" remote="uber" />
+  <project path="external/jemalloc" name="external_jemalloc" groups="pdk" />
   <project path="external/jetty" name="platform/external/jetty" groups="pdk" />
   <project path="external/jhead" name="platform/external/jhead" groups="pdk" />
   <project path="external/jline" name="platform/external/jline" groups="notdefault,tradefed,pdk-fs" />
@@ -210,7 +206,7 @@ sync-j="4" />
   <project path="external/libgdx" name="platform/external/libgdx" groups="pdk" />
   <project path="external/libgsm" name="platform/external/libgsm" groups="pdk" />
   <project path="external/libhevc" name="platform/external/libhevc" groups="pdk" />
-  <project path="external/libjpeg-turbo" name="external_libjpeg-turbo" remote="uber" />
+  <project path="external/libjpeg-turbo" name="external_libjpeg-turbo" />
   <project path="external/liblzf" name="platform/external/liblzf" groups="pdk" />
   <project path="external/libmicrohttpd" name="platform/external/libmicrohttpd" groups="pdk" />
   <project path="external/libmpeg2" name="platform/external/libmpeg2" groups="pdk" />
@@ -222,7 +218,7 @@ sync-j="4" />
   <project path="external/libopus" name="platform/external/libopus" groups="pdk" />
   <project path="external/libpcap" name="platform/external/libpcap" groups="pdk" />
   <project path="external/libphonenumber" name="platform/external/libphonenumber" groups="pdk" />
-  <project path="external/libpng" name="external_libpng" remote="uber" />
+  <project path="external/libpng" name="external_libpng" />
   <project path="external/libselinux" name="platform/external/libselinux" groups="pdk" />
   <project path="external/libunwind" name="platform/external/libunwind" groups="pdk" />
   <project path="external/libunwind_llvm" name="platform/external/libunwind_llvm" groups="pdk" />
@@ -301,7 +297,7 @@ sync-j="4" />
   <project path="external/sonic" name="platform/external/sonic" groups="pdk" />
   <project path="external/sonivox" name="platform/external/sonivox" groups="pdk" />
   <project path="external/speex" name="platform/external/speex" groups="pdk" />
-  <project path="external/sqlite" name="external_sqlite" remote="uber" />
+  <project path="external/sqlite" name="external_sqlite" />
   <project path="external/squashfs-tools" name="platform/external/squashfs-tools" groups="pdk" />
   <project path="external/srtp" name="platform/external/srtp" groups="pdk" />
   <project path="external/strace" name="platform/external/strace" groups="pdk" />
@@ -332,7 +328,7 @@ sync-j="4" />
   <project path="external/xmlrpcpp" name="platform/external/xmlrpcpp" groups="pdk" />
   <project path="external/xmlwriter" name="platform/external/xmlwriter" groups="pdk" />
   <project path="external/xmp_toolkit" name="platform/external/xmp_toolkit" groups="pdk" />
-  <project path="external/zlib" name="external_zlib" groups="pdk" remote="uber" />
+  <project path="external/zlib" name="external_zlib" groups="pdk" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk" />
   <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
@@ -638,15 +634,4 @@ sync-j="4" />
 <project path="device/lge/v500" name="AdrianoMartins/device_lge_v500" remote="github" revision="android-7.1" />
 <project path="vendor/lge" name="AdrianoMartins/proprietary_vendor_lge" remote="github" revision="android-7.1" />
 
-<!-- FFmpeg
-<project path="external/ffmpeg" name="AdrianoMartins/android_external_ffmpeg" remote="github" revision="android-7.1" />
-<project path="external/stagefright-plugins" name="AdrianoMartins/android_external_stagefright-plugins" remote="github" revision="android-7.1" />
--->
-
-<!-- Gapps
-<project path="vendor/google/build" name="AdrianoMartins/aosp_build" revision="master" remote="github" />
-<project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="opengapps" />
-<project path="vendor/opengapps/sources/arm" name="arm" clone-depth="1" revision="master" remote="opengapps" />
--->
- 
 </manifest>
