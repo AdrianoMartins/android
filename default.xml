@@ -622,6 +622,9 @@ sync-j="4" />
 <!-- Snapdragon LLVM Compiler -->
 <project path="prebuilts/clang/host/linux-x86/3.8" name="AdrianoMartins/android_vendor_qcom_sdclang-3.8" remote="github" revision="android-7.1"/>
 
+<!-- Stagefright FFMPEG plugin -->
+<project path="external/ffmpeg" name="AdrianoMartins/android_external_ffmpeg" remote="github" revision="android-7.1" />
+<project path="external/stagefright-plugins" name="AdrianoMartins/android_external_stagefright-plugins" remote="github" revision="android-7.1" />
 
 <!-- exFAT and NTFS -->
 <project path="external/exfat" name="AdrianoMartins/platform_external_exfat" remote="github" revision="android-7.1" />
