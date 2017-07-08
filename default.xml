@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-<remote  name="aosp"
-fetch="https://android.googlesource.com" />
-
-<remote name = "gh"
-fetch = "https://github.com/" />
-
+<remote name="aosp" fetch="https://android.googlesource.com" />
+<remote name="gh" fetch="https://github.com/" />
 <remote name="github" fetch="https://github.com/" />
-
-<remote name = "bb"
-revision = "master"
-fetch = "https://bitbucket.org/" />
+<remote name="bb" fetch="https://bitbucket.org/" />
 
 <default revision="nougat-mr2-release"
 remote="aosp"
@@ -621,6 +614,10 @@ sync-j="4" />
 
 <!-- Snapdragon LLVM Compiler -->
 <project path="prebuilts/clang/host/linux-x86/3.8" name="AdrianoMartins/android_vendor_qcom_sdclang-3.8" remote="github" revision="android-7.1"/>
+
+<!-- GCC Toolchain Cortex-a15 -->
+<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-cortex-a15" name="AdrianoMartins/arm-linux-androideabi-4.9-cortex-a15" remote="bb" revision="master"/>
+<project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-cortex-a15" name="AdrianoMartins/arm-eabi-4.9-cortex-a15" remote="bb" revision="master"/>
 
 <!-- Stagefright FFMPEG plugin -->
 <project path="external/ffmpeg" name="AdrianoMartins/android_external_ffmpeg" remote="github" revision="android-7.1" />
