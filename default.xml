@@ -617,6 +617,7 @@ sync-j="4" />
 <remove-project name="platform/hardware/qcom/power"/>
 <remove-project name="platform/hardware/qcom/gps"/>
 <remove-project name="platform/system/core"/>
+<remove-project name="platform/system/bt"/>
 <remove-project name="platform/system/extras"/>
 <remove-project name="platform/system/vold"/>
 <remove-project name="platform/system/media"/>
@@ -660,6 +661,7 @@ sync-j="4" />
 <project path="hardware/qcom/gps" name="AdrianoMartins/platform_hardware_qcom_gps" remote="github" revision="android-8.0" />
 <project path="hardware/libhardware" name="AdrianoMartins/platform_hardware_libhardware" remote="github" revision="android-8.0" />
 <project path="system/core" name="AdrianoMartins/platform_system_core" remote="github" revision="android-8.0" />
+<project path="system/bt" name="AdrianoMartins/platform_system_bt" remote="github" revision="android-8.0" />
 <project path="system/extras" name="AdrianoMartins/platform_system_extras" remote="github" revision="android-8.0" />
 <project path="system/vold" name="AdrianoMartins/platform_system_vold" remote="github" revision="android-8.0" />
 <project path="system/media" name="AdrianoMartins/platform_system_media" remote="github" revision="android-8.0" />
