@@ -646,7 +646,11 @@ sync-j="4" />
     <linkfile src="tools" dest="build/tools" />
 </project>
 
-<project path="build/soong" name="AdrianoMartins/android_build_soong" remote="github" revision="android-8.0" />
+<project path="build/soong" name="AdrianoMartins/android_build_soong" remote="github" revision="android-8.0" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+</project>
+
 <project path="bionic" name="AdrianoMartins/android_bionic" remote="github" revision="android-8.0" />
 <project path="art" name="AdrianoMartins/android_art" remote="github" revision="android-8.0" />
 <project path="external/e2fsprogs" name="AdrianoMartins/platform_external_e2fsprogs" remote="github" revision="android-8.0" />
