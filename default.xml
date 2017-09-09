@@ -628,6 +628,7 @@ sync-j="4" />
 <remove-project name="platform/bootable/recovery"/>
 <remove-project name="platform/external/ipsec-tools"/>
 <remove-project name="platform/hardware/libhardware"/>
+<remove-project name="platform/packages/providers/MediaProvider"/>
 
 <remove-project name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" />
 <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" />
@@ -674,6 +675,7 @@ sync-j="4" />
 <project path="packages/apps/Settings" name="AdrianoMartins/platform_packages_apps_Settings" remote="github" revision="android-8.0" />
 <project path="bootable/recovery" name="AdrianoMartins/bootable_recovery" remote="github" revision="android-8.0" />
 <project path="external/ipsec-tools" name="AdrianoMartins/android_external_ipsec-tools" remote="github" revision="android-8.0" />
+<project path="packages/providers/MediaProvider" name="AdrianoMartins/platform_packages_providers_mediaprovider" remote="github" revision="android-8.0" />
 
 <!-- Extras -->
 <project path="external/busybox" name="AdrianoMartins/android_external_busybox" remote="github" revision="android-8.0" />
