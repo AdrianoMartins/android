@@ -691,7 +691,6 @@ sync-j="4" />
   <remove-project name="platform/packages/apps/Car/Stream" />
   <remove-project name="platform/packages/apps/Car/SystemUpdater" />
   <remove-project name="platform/packages/apps/Car/UserManagement" />
-  <remove-project name="platform/packages/apps/Car/libs" />
   
   <!-- TV Packages -->
   <remove-project name="platform/packages/apps/TvSettings" />
