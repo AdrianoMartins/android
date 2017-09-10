@@ -766,9 +766,9 @@ sync-j="4" />
 <project path="external/ipsec-tools" name="AdrianoMartins/android_external_ipsec-tools" remote="github" revision="android-8.0" />
 <project path="packages/providers/MediaProvider" name="AdrianoMartins/platform_packages_providers_mediaprovider" remote="github" revision="android-8.0" />
 
-<!-- Extras >
+<!-- Extras
 <project path="external/busybox" name="AdrianoMartins/android_external_busybox" remote="github" revision="android-8.0" />
---
+-->
 
 <!-- Snapdragon LLVM Compiler 
 <project path="prebuilts/clang/host/linux-x86/3.8" name="AdrianoMartins/android_vendor_qcom_sdclang-3.8" remote="github" revision="android-8.0"/>
